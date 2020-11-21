@@ -117,7 +117,7 @@ function! s:show(lines, level, indent) abort
 
     for h in range(0, len(hls)-1)
         for hl in hls[h]
-            call matchaddpos(hl[0], [[h+1, hl[1]+1, hl[2]]], 10, -1)
+            call matchaddpos(hl[0], [[h+1, hl[1]+1, hl[2]]], -1, -1)
         endfor
     endfor
 
